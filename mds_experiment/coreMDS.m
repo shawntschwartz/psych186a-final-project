@@ -12,5 +12,5 @@ for i = 1:____
     [___{_}, ___{_}] = getMDSEigenVals(__________);
     
     % Run analyzeMDS script
-    analyzeMDS(__________);
+    analyzeMDS(__________, ___);
 end
