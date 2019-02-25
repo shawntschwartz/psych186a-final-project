@@ -6,5 +6,5 @@ function [Y, eigvals] = getMDSEigenVals(input_dataset)
 load(input_dataset);
 
 % s is a variable expected from the input_dataset (and is assumed to exist)
-[Y, eigvals] = mdscale(s,2); % @Maisy fill in the dimension required for this matrix
+[Y, eigvals] = mdscale(s,2);
 end
