@@ -18,7 +18,7 @@ if ~exist(output_dir, 'dir')
 end
 
 % retrieve current file name
-[~,name,ext] = fileparts(current_dataset);
+[filepath,name,ext] = fileparts(current_database);
 current_file_name = [name ext];
 
 % now write figure to output dir
@@ -27,5 +27,5 @@ saveas(gcf, fig_output_filename);
 
 %% Save list of fruit subcategories to txt file
 subcat_output_filename = [pwd '/' output_dir current_file_name '_subcategories.txt'];
-dlmwrite(subcat_output_filename, labs, '');
+dlmwrite(subcat_output_filename, labs);
 end

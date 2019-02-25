@@ -8,9 +8,9 @@ eig_vals = {};
 
 %% Run getMDSEigenVals for each dataset from dir
 for i = 1:num_datasets
-    current_file = [all_datasets(i).folder() '/' all_datasets(i).name()];
-    [Y_vals{i}, eig_vals{i}] = getMDSEigenVals(current_file);
+    current_file = [all_datasets(i).name() '/' all_datasets(__)._____()];
+    [Y{_}, eigvals{_}] = getMDSEigenVals(current_file);
     
     % Run analyzeMDS script
-    analyzeMDS(current_file,i,Y_vals);
+    analyzeMDS(__________, ___);
 end
