@@ -1,3 +1,0 @@
-function [imdsTrain, imdsTest, all_images] = fruitPreprocessing(image_dir_path)
-%This function loads in each zip file of fruit images to preprocess
-% and outputs each train and test labels as an 
