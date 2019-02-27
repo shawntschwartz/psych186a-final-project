@@ -1,6 +1,6 @@
 function [imdsTrain, imdsTest, all_images] = fruitPreprocessing(image_dir_path)
 %This function loads in each zip file of fruit images to preprocess
-% and outputs each train and test labels as an augumentedImage.
+% and outputs each train and test labels as an augmentedImage.
 
 %% Load In and Unpack All Images
 all_zips = dir([image_dir_path '/*.zip']);
