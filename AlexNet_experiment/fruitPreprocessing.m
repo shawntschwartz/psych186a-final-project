@@ -9,7 +9,7 @@ all_images = {length(all_zips)};
 
 for i = 1:length(all_zips)
     all_zips_paths{i} = [all_zips(i).folder() '/' all_zips(i).name()];
-    all_images{i} = unzip(all_zips_paths{i});
+    all_images{i} = unzip(all_zips_paths{i}, image_dir_path);
     
     % Resize Images to Match Pretrained Network Input Size
     imds{i} = imageDatastore(all_images{i}, 'IncludeSubfolders', true, ...
