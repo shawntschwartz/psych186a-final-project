@@ -17,3 +17,4 @@ for i = 1:length(all_zips)
     [imdsTrain, imdsTest] = splitEachLabel(imds, 0.7, 'randomized'); % 70 percent data set for training set
 end
 
+

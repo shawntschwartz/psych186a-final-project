@@ -15,4 +15,3 @@ main_fruit_path = '_curated-fruit-images';
 
 %% Save .mat File With Collaposed Fruit Image Feature Dimensions
 saveFruitFeatures;
-
