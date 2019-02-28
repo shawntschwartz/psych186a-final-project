@@ -12,3 +12,7 @@ main_fruit_path = '_curated-fruit-images';
 %% Run Fruit Image Analyses
 [fruitFeaturesTrainCollapsed, fruitFeauturesTestCollapsed] = ... 
     fruitAnalyses(fruitFeaturesTrain, fruitFeauturesTest)
+
+%% Save .mat File With Collaposed Fruit Image Feature Dimensions
+saveFruitFeatures;
+
