@@ -5,10 +5,10 @@ load(features_data);
 %% Use Multidimensional Scaling to Plot Image Classification Feature Dimensions
 
 % for training data output
-[Y_train, eigvals_train] = mdscale(fruitFeaturesTrainCollapsed,2);
+[Y_train, eigvals_train] = mdscale(fruitFeaturesTrainCollapsed, 2);
 
 % for testing data output
-[Y_test, eigvals_test] = mdscale(fruitFeauturesTestCollapsed,2);
+[Y_test, eigvals_test] = mdscale(fruitFeauturesTestCollapsed, 2);
 
 %% Add Path to mds_experiment directory to access functions
 if (IS_RUNNING_ON_MAC == 1)
