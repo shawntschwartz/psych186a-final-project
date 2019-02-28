@@ -2,7 +2,7 @@
 main_fruit_path = '_curated-fruit-images';
 
 %% Run Fruit Image Preprocessing
-[fruitFeaturesTrain, fruitFeauturesTest, all_fruit_images] = ...
+[fruitFeaturesTrain, fruitFeauturesTest, all_fruit_images, labs] = ...
     fruitPreprocessing(main_fruit_path);
 
 %% Run Fruit Image Classification and Feature Output Layers

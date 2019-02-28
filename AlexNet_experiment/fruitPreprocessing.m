@@ -1,4 +1,4 @@
-function [imdsTrain, imdsTest, all_images] = fruitPreprocessing(image_dir_path)
+function [imdsTrain, imdsTest, all_images, labs] = fruitPreprocessing(image_dir_path)
 %This function loads in each zip file of fruit images to preprocess
 % and outputs each train and test labels as an augmentedImage.
 
@@ -17,4 +17,7 @@ for i = 1:length(all_zips)
     [imdsTrain, imdsTest] = splitEachLabel(imds, 0.7, 'randomized'); % 70 percent data set for training set
 end
 
-
+%% Return imds subfolder labels as labs
+labs = imds{1}.Labels
+end
+ 
