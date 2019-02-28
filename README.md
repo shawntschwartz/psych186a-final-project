@@ -1,15 +1,34 @@
 # Psych186A Final Project
-## UCLA - Winter Quarter - 2019
+**UCLA - Winter Quarter - 2019**
 
-### Authors
+## Authors
 Shawn Schwartz, Maisy Tarlow, Madi Yeomans, Richard Sherbrooke, & Suhwan Choi
+
 University of California, Los Angeles - Department of Psychology
 
 ### Project Summary
 Final project comparing similarity in psychological space to CNN image classification in computational space of fruits.
 
 ### Code Structure
+The code for the following experiments is organized into various directories and functions for each experiment.
 
+#### Experiment 1: ```mds_experiment```
+```bash
+put file tree here
+```
+
+To run ```mds_experiment```, set your *current working directory* to the ```mds_experiment/``` directory and call ```runMDSExp``` in the MATLAB command window (console).
+
+**REQUIREMENTS:** ```mds_experiment/mds_datasets/``` must include *at least one* ```.mat``` file as a dataset with the following variables:
+ - **d** (n x n) *double* a normalized distance matrix (i.e., max distance = 1, min distance = 0)
+ - **labs** (n x A) *char* as an ordered listing of strings with each label corresponding to the items in the matrices
+ - **n** (1 x 1) *double* where n is the numerical value used in the above (n x ...) matrices representing the number of items
+ - **s** (n x n) *double* a normalized similarity matrix (i.e., max similarity = 1, min similarity = 0)
+
+#### Experiment 2: ```AlexNet_experiment```
+```bash
+put file tree here
+```
 
 ### Background
 Prior work by Shepard (1987) laid the foundation for measuring similarity and inferring structure from similarity. This prior work was essential for assessing the underlying structures that make up people’s psychological representations of similarity between various objects in space. Through the use of multidimensional scaling (MDS) as a framework, we arrive at Shepard’s “universal” law that is explained by an exponential function where similarity decreases with distance in psychological space.
