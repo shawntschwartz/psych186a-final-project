@@ -10,4 +10,5 @@ main_fruit_path = '_curated-fruit-images';
     fruitClassification(fruitFeaturesTrain, fruitFeauturesTest, all_fruit_images);
 
 %% Run Fruit Image Analyses
-% TODO ^^
+[fruitFeaturesTrainCollapsed, fruitFeauturesTestCollapsed] = ... 
+    fruitAnalyses(fruitFeaturesTrain, fruitFeauturesTest)
