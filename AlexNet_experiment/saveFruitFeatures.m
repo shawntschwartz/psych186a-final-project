@@ -6,10 +6,8 @@ if ~exist(output_dir, 'dir')
     mkdir(output_dir);
 end
 
-% retrieve current file name
-[~,name,ext] = fileparts(current_dataset);
-current_file_name = [name ext];
-
 % now write .mat file to output dir
 data_output_filename = [pwd '/' output_dir 'classified_fruit_data.mat'];
 save(data_output_filename);
+
+fprintf('\n\nFruitNet Classification Successfully Completed and Saved as classified_fruit_data.mat\n\n');

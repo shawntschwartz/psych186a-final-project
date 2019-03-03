@@ -11,7 +11,10 @@ main_fruit_path = '_curated-fruit-images';
 
 %% Run Fruit Image Analyses
 [fruitFeaturesTrainCollapsed, fruitFeauturesTestCollapsed] = ... 
-    fruitAnalyses(fruitFeaturesTrain, fruitFeauturesTest)
+    fruitAnalyses(fruitFeaturesTrain, fruitFeauturesTest, all_fruit_images);
+
+%% Get Only Unique Fruit Sublabels
+labs = unique(labs);
 
 %% Save .mat File With Collaposed Fruit Image Feature Dimensions
 saveFruitFeatures;

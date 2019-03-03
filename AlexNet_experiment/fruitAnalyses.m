@@ -1,19 +1,19 @@
-function [featuresTrainCollapsed, featuresTestCollapsed] = fruitAnalyses(featuresTrain, featuresTest)
+function [featuresTrainCollapsed, featuresTestCollapsed] = fruitAnalyses(featuresTrain, featuresTest, fruit_imgs)
 %This function averages each fruit image and its fc7 Fully Connected
 % layer across each related fruit subcategory.
 
-num_subcats = length(featuresTrain{1});
-num_subfruits = length(featuresTrain{2});
+num_subcats = length(featuresTrain);
+num_subfruits = length(fruit_imgs{1});
 
-featuresTrainCollapsed = {num_subcats};
-featuresTestCollapsed = {num_subcats};
+%featuresTrainCollapsed = {num_subcats}{num_subfruits};
+%featuresTestCollapsed = {num_subcats}{num_subfruits};
 
 for i = 1:num_subcats
     for j = 1:num_subfruits
         % create a num_subfruits x 4096 matrix to find avg. feature
         % dimensions per each subcategory of fruit
-        featuresTrainCollapsed_mat(j,:) = featuresTrain{i}{j};
-        featuresTestCollapsed_mat(j,:) = featuresTest{i}{j};
+        featuresTrainCollapsed_mat(j,:) = mean(featuresTrain{1}{j});
+        featuresTestCollapsed_mat(j,:) = mean(featuresTest{1}{j});
     end
     
     % average matrix row-wise
@@ -22,7 +22,10 @@ for i = 1:num_subcats
     
     % store the averaged matrix for each subcategory of fruit
     % returned by the function
-    featuresTrainCollapsed{i} = featuresTrainCollapsed_mat;
-    featuresTestCollapsed{i} = featuresTestCollapsed_mat;
+    featuresTrainCollapsed{i}{j} = featuresTrainCollapsed_mat;
+    fprintf('\n\nCollaposed Fruit Training Features for Subcategory %d and Fruit %d Successfully Stored!', i, j);
+    
+    featuresTestCollapsed{i}{j} = featuresTestCollapsed_mat;
+    fprintf('\n\nCollaposed Fruit Test Features for Subcategory %d and Fruit %d Successfully Stored!', i, j);
 end
 end
