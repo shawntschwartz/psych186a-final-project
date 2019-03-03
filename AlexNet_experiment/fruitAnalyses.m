@@ -5,9 +5,6 @@ function [featuresTrainCollapsed, featuresTestCollapsed] = fruitAnalyses(feature
 num_subcats = length(featuresTrain);
 num_subfruits = length(fruit_imgs{1});
 
-%featuresTrainCollapsed = {num_subcats}{num_subfruits};
-%featuresTestCollapsed = {num_subcats}{num_subfruits};
-
 for i = 1:num_subcats
     for j = 1:num_subfruits
         % create a num_subfruits x 4096 matrix to find avg. feature
