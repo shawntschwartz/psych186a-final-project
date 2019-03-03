@@ -1,10 +1,11 @@
 # Psych186A Final Project
-**UCLA - Winter Quarter - 2019**
 
 ## Authors
 Shawn Schwartz, Maisy Tarlow, Madi Yeomans, Richard Sherbrooke, & Suhwan Choi
 
 University of California, Los Angeles - Department of Psychology
+
+**UCLA - Winter Quarter - 2019**
 
 ### Project Summary
 Final project comparing similarity in psychological space to CNN image classification in computational space of fruits.
