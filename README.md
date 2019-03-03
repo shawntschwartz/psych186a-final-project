@@ -12,9 +12,38 @@ Final project comparing similarity in psychological space to CNN image classific
 ### Code Structure
 The code for the following experiments is organized into various directories and functions for each experiment.
 
-#### Experiment 1: ```mds_experiment```
 ```bash
-put file tree here
+.
+├── AlexNet_experiment
+│   ├── coreFruitNet.m
+│   ├── executePlotFruits.m
+│   ├── fruitAnalyses.m
+│   ├── fruitClassification.m
+│   ├── fruitPreprocessing.m
+│   ├── plotFruits.m
+│   ├── runFruitNet.m
+│   └── saveFruitFeatures.m
+├── README.md
+├── mds_experiment
+│   ├── _output
+│   │   ├── fruit2_romney.mat_figure.png
+│   │   ├── fruit2_romney.mat_subcategories.txt
+│   │   ├── fruit_romney.mat_figure.png
+│   │   ├── fruit_romney.mat_subcategories.txt
+│   │   ├── fruits.mat_figure.png
+│   │   └── fruits.mat_subcategories.txt
+│   ├── analyzeMDS.m
+│   ├── coreMDS.m
+│   ├── getMDSEigenVals.m
+│   ├── mds_datasets
+│   │   ├── fruit2_romney.mat
+│   │   ├── fruit_romney.mat
+│   │   └── fruits.mat
+│   └── runMDSExp.m
+└── papers
+    └── DeDeyne2008BRM.PDF
+
+5 directories, 23 files
 ```
 
 To run ```mds_experiment```, set your *current working directory* to the ```mds_experiment/``` directory and call ```runMDSExp``` in the MATLAB command window (console).
@@ -24,11 +53,6 @@ To run ```mds_experiment```, set your *current working directory* to the ```mds_
  - **labs** (n x A) *char* as an ordered listing of strings with each label corresponding to the items in the matrices
  - **n** (1 x 1) *double* where n is the numerical value used in the above (n x ...) matrices representing the number of items
  - **s** (n x n) *double* a normalized similarity matrix (i.e., max similarity = 1, min similarity = 0)
-
-#### Experiment 2: ```AlexNet_experiment```
-```bash
-put file tree here
-```
 
 ### Background
 Prior work by Shepard (1987) laid the foundation for measuring similarity and inferring structure from similarity. This prior work was essential for assessing the underlying structures that make up people’s psychological representations of similarity between various objects in space. Through the use of multidimensional scaling (MDS) as a framework, we arrive at Shepard’s “universal” law that is explained by an exponential function where similarity decreases with distance in psychological space.
