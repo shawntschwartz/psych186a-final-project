@@ -1,4 +1,4 @@
-function [featuresTrain, featuresTest] = fruitClassification(imdsTrain, imdsTest, all_images)
+function [featuresTest] = fruitClassification(imdsTest, all_images)
 %This function classifies each fruit image and its fc7 Fully Connected
 % layer.
 
@@ -16,12 +16,10 @@ for i = 1:length(all_images)
         cur_image = imresize(cur_image, [227 227]);
         %cur_image = grey2rgb(cur_image);
         
-        augimdsTrain = augmentedImageDatastore(net_layer_size(1:2), imdsTrain);
-        augimdsTest = augmentedImageDatastore(net_layer_size(1:2), imdsTest);
+        augimdsTest = augmentedImageDatastore(net_layer_size(1:2), cur_image);
         
         layer = 'fc7';
         
-        featuresTrain{i}{j} = activations(FruitNet, augimdsTrain, layer, 'OutputAs', 'rows');
         featuresTest{i}{j} = activations(FruitNet, augimdsTest, layer, 'OutputAs', 'rows');
         
         fprintf('\n\nFruit Subcategory %d with Fruit %d Successfully Imported', i, j);

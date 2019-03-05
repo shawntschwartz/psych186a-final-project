@@ -2,16 +2,16 @@
 main_fruit_path = '_curated-fruit-images';
 
 %% Run Fruit Image Preprocessing
-[fruitFeaturesTrain, fruitFeauturesTest, all_fruit_images, labs] = ...
+[fruitFeauturesTest, all_fruit_images, labs] = ...
     fruitPreprocessing(main_fruit_path);
 
 %% Run Fruit Image Classification and Feature Output Layers
-[fruitFeaturesTrain, fruitFeauturesTest] = ...
-    fruitClassification(fruitFeaturesTrain, fruitFeauturesTest, all_fruit_images);
+[fruitFeauturesTest] = ...
+    fruitClassification(fruitFeauturesTest, all_fruit_images);
 
 %% Run Fruit Image Analyses
-[fruitFeaturesTrainCollapsed, fruitFeauturesTestCollapsed] = ... 
-    fruitAnalyses(fruitFeaturesTrain, fruitFeauturesTest, all_fruit_images);
+[fruitFeauturesTestCollapsed] = ... 
+    fruitAnalyses(fruitFeauturesTest, all_fruit_images);
 
 %% Get Only Unique Fruit Sublabels
 labs = unique(labs);

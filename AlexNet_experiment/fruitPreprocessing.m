@@ -1,4 +1,4 @@
-function [imdsTrain, imdsTest, all_fruit_images, labs] = fruitPreprocessing(image_dir_path)
+function [imdsTest, all_fruit_images, labs] = fruitPreprocessing(image_dir_path)
 %This function loads in each zip file of fruit images to preprocess
 % and outputs each train and test labels as an augmentedImage.
 
@@ -20,7 +20,7 @@ for i = 1:length(all_fruit_paths)
     fprintf('\n\nGetting Fruit Path %d', i);
     
     all_subcategory_paths{i} = [all_fruit_paths(i).folder() '/' all_fruit_paths(i).name()];
-    all_fruit_images{i} = dir([all_subcategory_paths{i} '/*.png']); 
+    all_fruit_images{i} = dir([all_subcategory_paths{i} '/*.jpg']); 
    
     % Resize Images to Match Pretrained Network Input Size
     imds{i} = imageDatastore(all_subcategory_paths{i}, 'IncludeSubfolders', true, ...
