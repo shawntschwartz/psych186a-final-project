@@ -9,7 +9,7 @@ end
 
 %% Use Multidimensional Scaling to Plot Image Classification Feature Dimensions
 d_test = pdist(fruitTest);
-[Y_test, eigvals_test] = mdscale(d_test, 2);
+[Y_test] = mdscale(d_test, 2);
 
 %% Cast Datatype Categorical Labels to Datatype Char
 plot_labs = char(plot_labs);
