@@ -14,7 +14,6 @@ for i = 1:length(all_images)
         cur_image = imread([all_images{i}(j).folder() '/' all_images{i}(j).name()]);
         net_layer_size = FruitNet.Layers(1).InputSize;
         cur_image = imresize(cur_image, [227 227]);
-        %cur_image = grey2rgb(cur_image);
         
         augimdsTest = augmentedImageDatastore(net_layer_size(1:2), cur_image);
         
