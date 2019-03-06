@@ -26,10 +26,11 @@ for i = 1:length(all_fruit_paths)
     imds{i} = imageDatastore(all_subcategory_paths{i}, 'IncludeSubfolders', true, ...
        'LabelSource', 'foldernames');
     [imdsTrain, imdsTest] = splitEachLabel(imds{i}, 0.7, 'randomized'); % 70 percent data set for training set
+    
+    % Return imds subfolder labels as labs
+    labs{i} = imds{i}.Labels;
 end
 
-%% Return imds subfolder labels as labs
-labs = imds{1}.Labels;
 
 fprintf('\n\nSuccessfully Finished Fruit Image Preprocessing for %d Fruit Subcategories', i);
 end
