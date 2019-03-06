@@ -9,8 +9,8 @@ for i = 1:num_subcats
     for j = 1:num_subfruits
         % create a num_subfruits x 4096 matrix to find avg. feature
         % dimensions per each subcategory of fruit
-        %TODO FIX THIS:
-        featuresTestCollapsed_mat(j,:) = mean(featuresTest{i}{j});
+        
+        featuresTestCollapsed_mat(j,:) = featuresTest{i}{j};
     end
     
     % average matrix row-wise
