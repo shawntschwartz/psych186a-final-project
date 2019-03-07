@@ -1,9 +1,7 @@
 rm(list=ls())
-library(pavo)
 library(tidyverse)
 library(ggplot2)
-library(ggimage)
-library(ggbiplot)
+library(dplyr)
 
 wd_path <- "~/Developer/Psych186A-Final-Project/AlexNet_experiment/"
 setwd(wd_path)
