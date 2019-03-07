@@ -9,10 +9,14 @@ end
 
 %% Use Multidimensional Scaling to Plot Image Classification Feature Dimensions
 d_test = pdist(fruitTest);
-[Y_test] = mdscale(d_test, 2);
+d_test_matrix = squareform(d_test);
+[Y_test] = mdscale(d_test_matrix, 2);
 
 %% Cast Datatype Categorical Labels to Datatype Char
 plot_labs = char(plot_labs);
+
+%% Scale Plots To Michael Lee MDS Data Scale
+Y_test = Y_test ./ 400;
 
 %% Plot MDS of Image Classified Data
 figure('name', features_data);
