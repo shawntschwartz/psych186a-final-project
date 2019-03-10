@@ -1,0 +1,16 @@
+banana-red          
+bananas-multiple    
+blueberries-multiple
+blueberry-single    
+coconut-closed      
+coconut-open        
+grape-single        
+grapefruit-closed   
+grapefruit-open     
+grapes-multiple     
+tomato-green        
+tomato-red          
+tomato-yellow       
+tomatoes-mixed      
+watermelon-closed   
+watermelon-open     
