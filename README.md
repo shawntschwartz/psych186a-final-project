@@ -248,10 +248,111 @@ The code for the following experiments is organized into various directories and
 │   │       ├── watermelon_08.jpg
 │   │       ├── watermelon_09.jpg
 │   │       └── watermelon_10.jpg
+│   ├── _curated-subcat-fruit-images
+│   │   ├── banana-red
+│   │   │   ├── banana-red_01.jpg
+│   │   │   ├── banana-red_02.jpg
+│   │   │   ├── banana-red_03.jpg
+│   │   │   ├── banana-red_04.jpg
+│   │   │   └── banana-red_05.jpg
+│   │   ├── bananas-multiple
+│   │   │   ├── bananas-multiple_01.jpg
+│   │   │   ├── bananas-multiple_02.jpg
+│   │   │   ├── bananas-multiple_03.jpg
+│   │   │   ├── bananas-multiple_04.jpg
+│   │   │   └── bananas-multiple_05.jpg
+│   │   ├── blueberries-multiple
+│   │   │   ├── blueberries_01.jpg
+│   │   │   ├── blueberries_02.jpg
+│   │   │   ├── blueberries_03.jpg
+│   │   │   ├── blueberries_04.jpg
+│   │   │   └── blueberries_05.jpg
+│   │   ├── blueberry-single
+│   │   │   ├── blueberry-single_01.jpg
+│   │   │   ├── blueberry-single_02.jpg
+│   │   │   ├── blueberry-single_03.jpg
+│   │   │   ├── blueberry-single_04.jpg
+│   │   │   └── blueberry-single_05.jpg
+│   │   ├── coconut-closed
+│   │   │   ├── coconut-closed_01.jpg
+│   │   │   ├── coconut-closed_02.jpg
+│   │   │   ├── coconut-closed_03.jpg
+│   │   │   ├── coconut-closed_04.jpg
+│   │   │   └── coconut-closed_05.jpg
+│   │   ├── coconut-open
+│   │   │   ├── coconut-open_01.jpg
+│   │   │   ├── coconut-open_02.jpg
+│   │   │   ├── coconut-open_03.jpg
+│   │   │   ├── coconut-open_04.jpg
+│   │   │   └── coconut-open_05.jpg
+│   │   ├── grape-single
+│   │   │   ├── grape-single_01.jpg
+│   │   │   ├── grape-single_02.jpg
+│   │   │   ├── grape-single_03.jpg
+│   │   │   ├── grape-single_04.jpg
+│   │   │   └── grape-single_05.jpg
+│   │   ├── grapefruit-closed
+│   │   │   ├── grapefruit-closed_01.jpg
+│   │   │   ├── grapefruit-closed_02.jpg
+│   │   │   ├── grapefruit-closed_03.jpg
+│   │   │   ├── grapefruit-closed_04.jpg
+│   │   │   └── grapefruit-closed_05.jpg
+│   │   ├── grapefruit-open
+│   │   │   ├── grapefruit-open_01.jpg
+│   │   │   ├── grapefruit-open_02.jpg
+│   │   │   ├── grapefruit-open_03.jpg
+│   │   │   ├── grapefruit-open_04.jpg
+│   │   │   └── grapefruit-open_05.jpg
+│   │   ├── grapes-multiple
+│   │   │   ├── grapes-multiple_01.jpg
+│   │   │   ├── grapes-multiple_02.jpg
+│   │   │   ├── grapes-multiple_03.jpg
+│   │   │   ├── grapes-multiple_04.jpg
+│   │   │   └── grapes-multiple_05.jpg
+│   │   ├── tomato-green
+│   │   │   ├── tomato-green_01.jpg
+│   │   │   ├── tomato-green_02.jpg
+│   │   │   ├── tomato-green_03.jpg
+│   │   │   ├── tomato-green_04.jpg
+│   │   │   └── tomato-green_05.jpg
+│   │   ├── tomato-red
+│   │   │   ├── tomato-red_01.jpg
+│   │   │   ├── tomato-red_02.jpg
+│   │   │   ├── tomato-red_03.jpg
+│   │   │   ├── tomato-red_04.jpg
+│   │   │   └── tomato-red_05.jpg
+│   │   ├── tomato-yellow
+│   │   │   ├── tomato-yellow_01.jpg
+│   │   │   ├── tomato-yellow_02.jpg
+│   │   │   ├── tomato-yellow_03.jpg
+│   │   │   ├── tomato-yellow_04.jpg
+│   │   │   └── tomato-yellow_05.jpg
+│   │   ├── tomatoes-mixed
+│   │   │   ├── tomatoes-mixed_01.jpg
+│   │   │   ├── tomatoes-mixed_02.jpg
+│   │   │   ├── tomatoes-mixed_03.jpg
+│   │   │   ├── tomatoes-mixed_04.jpg
+│   │   │   └── tomatoes-mixed_05.jpg
+│   │   ├── watermelon-closed
+│   │   │   ├── watermelon-closed_01.jpg
+│   │   │   ├── watermelon-closed_02.jpg
+│   │   │   ├── watermelon-closed_03.jpg
+│   │   │   ├── watermelon-closed_04.jpg
+│   │   │   └── watermelon-closed_05.jpg
+│   │   └── watermelon-open
+│   │       ├── watermelon-open_01.jpg
+│   │       ├── watermelon-open_02.jpg
+│   │       ├── watermelon-open_03.jpg
+│   │       ├── watermelon-open_04.jpg
+│   │       └── watermelon-open_05.jpg
 │   ├── _output
 │   │   ├── classified_fruit_data.mat
+│   │   ├── classified_fruit_data.mat_figure-stacked.png
 │   │   ├── classified_fruit_data.mat_figure.png
-│   │   └── classified_fruit_data.mat_subcategories.txt
+│   │   ├── classified_fruit_data.mat_subcategories.txt
+│   │   ├── classified_subcat_fruit_data.mat
+│   │   ├── classified_subcat_fruit_data.mat_figure.png
+│   │   └── classified_subcat_fruit_data.mat_subcategories.txt
 │   ├── _size-regressions
 │   │   ├── _csvs
 │   │   │   ├── fruit-img-dims.csv
@@ -275,10 +376,12 @@ The code for the following experiments is organized into various directories and
 │   │   │   └── fruit_sizes-lm-stats.txt
 │   │   └── alexnet-regression.R
 │   ├── coreFruitNet.m
+│   ├── executeMultiplePlotFruits.m
 │   ├── executePlotFruits.m
 │   ├── fruitAnalyses.m
 │   ├── fruitClassification.m
 │   ├── fruitPreprocessing.m
+│   ├── multiplePlotFruits.m
 │   ├── plotFruits.m
 │   ├── runFruitNet.m
 │   └── saveFruitFeatures.m
@@ -302,7 +405,7 @@ The code for the following experiments is organized into various directories and
 └── papers
     └── DeDeyne2008BRM.PDF
 
-32 directories, 254 files
+49 directories, 340 files
 ```
 
 To run ```mds_experiment```, set your *current working directory* to the ```mds_experiment/``` directory and call ```runMDSExp``` in the MATLAB command window (console).
