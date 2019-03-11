@@ -1,0 +1,8 @@
+         fruit       size.cm     
+ apple      : 1   Min.   : 1.27  
+ apricot    : 1   1st Qu.: 5.00  
+ banana     : 1   Median : 7.39  
+ blueberry  : 1   Mean   :13.83  
+ coconut    : 1   3rd Qu.:13.00  
+ date       : 1   Max.   :53.34  
+ (Other)    :15                  

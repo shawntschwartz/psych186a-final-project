@@ -1,0 +1,17 @@
+
+Call:
+lm(formula = alexnet_classifications$AlexNetY ~ fruit_img_dims$Width)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-94.180 -48.099  -7.613  41.862 132.007 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)
+(Intercept)             49.49      66.79   0.741    0.468
+fruit_img_dims$Width   -58.81      77.82  -0.756    0.459
+
+Residual standard error: 60.35 on 19 degrees of freedom
+Multiple R-squared:  0.02918,	Adjusted R-squared:  -0.02192 
+F-statistic: 0.5711 on 1 and 19 DF,  p-value: 0.4591
+

@@ -15,6 +15,12 @@ for i = 1:length(all_images)
         net_layer_size = FruitNet.Layers(1).InputSize;
         cur_image = imresize(cur_image, [227 227]);
         
+        % TEMP: Turn to B&W
+        % make dimension fillers for grayscale
+        cur_image = rgb2gray(cur_image);
+        filler = zeros(size(cur_image),'uint8');
+        cur_image = cat(3,cur_image,filler,filler);
+        
         augimdsTest = augmentedImageDatastore(net_layer_size(1:2), cur_image);
         
         layer = 'fc7';

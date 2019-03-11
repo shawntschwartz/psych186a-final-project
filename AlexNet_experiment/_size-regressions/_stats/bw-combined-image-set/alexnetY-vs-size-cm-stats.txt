@@ -1,0 +1,19 @@
+
+Call:
+lm(formula = alexnet_classifications$AlexNetY ~ fruit_sizes$size.cm)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.163427 -0.075493  0.003094  0.065449  0.213397 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)  
+(Intercept)         -0.019857   0.029616  -0.670   0.5106  
+fruit_sizes$size.cm  0.002647   0.001437   1.842   0.0811 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1006 on 19 degrees of freedom
+Multiple R-squared:  0.1516,	Adjusted R-squared:  0.1069 
+F-statistic: 3.394 on 1 and 19 DF,  p-value: 0.08109
+

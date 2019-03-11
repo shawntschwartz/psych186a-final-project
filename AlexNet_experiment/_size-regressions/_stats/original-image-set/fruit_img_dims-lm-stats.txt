@@ -1,0 +1,8 @@
+       Fruit        Height         Width       
+ Apple    : 1   Min.   :0.47   Min.   :0.3600  
+ Apricot  : 1   1st Qu.:0.60   1st Qu.:0.8300  
+ Banana   : 1   Median :0.71   Median :0.9000  
+ Blueberry: 1   Mean   :0.71   Mean   :0.8414  
+ Coconut  : 1   3rd Qu.:0.76   3rd Qu.:0.9500  
+ Date     : 1   Max.   :0.95   Max.   :0.9900  
+ (Other)  :15                                  
