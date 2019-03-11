@@ -1,10 +1,11 @@
 %% Setup Dir Path for Fruit Images
 main_fruit_path = '_curated-fruit-images';
 new_subcat_fruit_path = '_curated-subcat-fruit-images';
+combined_fruit_path = '_combined-images';
 
 %% Run Fruit Image Preprocessing
 [fruitFeaturesTest, all_fruit_images, labs] = ...
-    fruitPreprocessing(new_subcat_fruit_path);
+    fruitPreprocessing(combined_fruit_path);
 
 %% Run Fruit Image Classification and Feature Output Layers
 [fruitFeaturesTest] = ...
