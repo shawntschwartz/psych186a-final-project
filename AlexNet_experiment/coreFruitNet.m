@@ -9,7 +9,7 @@ combined_fruit_path = '_combined-images';
 
 %% Run Fruit Image Classification and Feature Output Layers
 [fruitFeaturesTest] = ...
-    fruitClassification(fruitFeaturesTest, all_fruit_images);
+    fruitClassification(fruitFeaturesTest, all_fruit_images, is_bw);
 
 %% Run Fruit Image Analyses
 [fruitFeauturesTestCollapsed] = ... 
