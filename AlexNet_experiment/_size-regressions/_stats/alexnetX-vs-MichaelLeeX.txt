@@ -1,0 +1,19 @@
+
+Call:
+lm(formula = alexnet_classifications$AlexNetX ~ michael_lee$MLMDSX)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.28582 -0.11363 -0.02279  0.03517  0.61036 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)  
+(Intercept)         0.01712    0.04175    0.41   0.6864  
+michael_lee$MLMDSX  0.25745    0.14879    1.73   0.0998 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1913 on 19 degrees of freedom
+Multiple R-squared:  0.1361,	Adjusted R-squared:  0.09065 
+F-statistic: 2.994 on 1 and 19 DF,  p-value: 0.0998
+

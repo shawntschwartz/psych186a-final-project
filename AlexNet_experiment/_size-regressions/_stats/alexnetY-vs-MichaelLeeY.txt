@@ -1,0 +1,17 @@
+
+Call:
+lm(formula = alexnet_classifications$AlexNetY ~ michael_lee$MLMDSY)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.27234 -0.10166 -0.04503  0.11643  0.45100 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)
+(Intercept)         0.009534   0.036415   0.262    0.796
+michael_lee$MLMDSY -0.027100   0.155573  -0.174    0.864
+
+Residual standard error: 0.1669 on 19 degrees of freedom
+Multiple R-squared:  0.001595,	Adjusted R-squared:  -0.05095 
+F-statistic: 0.03034 on 1 and 19 DF,  p-value: 0.8636
+
