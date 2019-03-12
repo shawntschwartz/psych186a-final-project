@@ -26,9 +26,6 @@ names(alexnet_classifications)[1] <- "Fruit.Labels"
 names(alexnet_classifications)[2] <- "AlexNetX"
 names(alexnet_classifications)[3] <- "AlexNetY"
 
-#fruit_sizes <- read.csv(file = "_csvs/fruits.avgsizes.csv", header = TRUE, sep = ",")
-#ruit_img_dims <- read.csv(file = "_csvs/fruit-img-dims.csv", header = TRUE, sep = ",")
-
 michael_lee <- read.csv(file = "_csvs/mds_fruit2_coords.csv", header = FALSE, sep = ",")
 names(michael_lee)[1] <- "Fruit.Labels"
 names(michael_lee)[2] <- "MLMDSX"

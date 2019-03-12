@@ -1,0 +1,19 @@
+
+Call:
+lm(formula = alexnet_classifications$AlexNetY ~ textures$Mean.Texture)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.24718 -0.06853  0.02822  0.05010  0.29280 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)           -0.502711   0.079857  -6.295 3.16e-07 ***
+textures$Mean.Texture  0.031611   0.004853   6.514 1.63e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1248 on 35 degrees of freedom
+Multiple R-squared:  0.548,	Adjusted R-squared:  0.5351 
+F-statistic: 42.43 on 1 and 35 DF,  p-value: 1.635e-07
+
