@@ -755,7 +755,10 @@ The code for the following experiments is organized into various directories and
 │   │   │   │   ├── alexnetY-vs-img-width.png
 │   │   │   │   └── alexnetY-vs-size-cm.png
 │   │   │   └── texture
-│   │   │       └── alexnetY-vs-Texture.png
+│   │   │       ├── alexnetX-vs-Texture.png
+│   │   │       ├── alexnetXBW-vs-Texture.png
+│   │   │       ├── alexnetY-vs-Texture.png
+│   │   │       └── alexnetYBW-vs-Texture.png
 │   │   ├── _stats
 │   │   │   ├── bw-combined-image-set
 │   │   │   │   ├── alexnetX-vs-img-height-stats.txt
@@ -788,7 +791,10 @@ The code for the following experiments is organized into various directories and
 │   │   │   │   ├── fruit_img_dims-lm-stats.txt
 │   │   │   │   └── fruit_sizes-lm-stats.txt
 │   │   │   └── texture
-│   │   │       └── alexnetY-vs-Texture.txt
+│   │   │       ├── alexnetX-vs-Texture.txt
+│   │   │       ├── alexnetXBW-vs-Texture.txt
+│   │   │       ├── alexnetY-vs-Texture.txt
+│   │   │       └── alexnetYBW-vs-Texture.txt
 │   │   ├── alexnet-regression-combined.R
 │   │   ├── alexnet-regression-original.R
 │   │   ├── mds-v-alexnet-reg.R
@@ -825,5 +831,5 @@ The code for the following experiments is organized into various directories and
     ├── DeDeyne2008BRM.PDF
     └── TextDocSimilarity.pdf
 
-97 directories, 682 files
+97 directories, 688 files
 ```
