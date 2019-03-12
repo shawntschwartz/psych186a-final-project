@@ -1,3 +1,8 @@
+%
+% By Shawn T. Schwartz, 2019
+% <shawnschwartz@ucla.edu>
+%
+
 %% Clean Up Workspace
 clear all;
 clc;
