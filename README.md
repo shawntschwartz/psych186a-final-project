@@ -716,11 +716,14 @@ The code for the following experiments is organized into various directories and
 │   │   ├── combined_fruit_BW_data.mat_subcategories.txt
 │   │   ├── combined_fruit_data.mat
 │   │   ├── combined_fruit_data.mat_figure.png
-│   │   └── combined_fruit_data.mat_subcategories.txt
+│   │   ├── combined_fruit_data.mat_subcategories.txt
+│   │   └── texture_analyses.mat
 │   ├── _size-regressions
 │   │   ├── _csvs
 │   │   │   ├── fruit-img-dims.csv
 │   │   │   ├── fruits.avgsizes.csv
+│   │   │   ├── mds_fruit2_coords.csv
+│   │   │   ├── texture_analyses_vals.csv
 │   │   │   ├── y_test_combined_BW_coords.csv
 │   │   │   ├── y_test_combined_BW_coords_purged.csv
 │   │   │   ├── y_test_combined_coords.csv
@@ -741,13 +744,18 @@ The code for the following experiments is organized into various directories and
 │   │   │   │   ├── alexnetY-vs-img-height.png
 │   │   │   │   ├── alexnetY-vs-img-width.png
 │   │   │   │   └── alexnetY-vs-size-cm.png
-│   │   │   └── original-image-set
-│   │   │       ├── alexnetX-vs-img-height.png
-│   │   │       ├── alexnetX-vs-img-width.png
-│   │   │       ├── alexnetX-vs-size-cm.png
-│   │   │       ├── alexnetY-vs-img-height.png
-│   │   │       ├── alexnetY-vs-img-width.png
-│   │   │       └── alexnetY-vs-size-cm.png
+│   │   │   ├── lee-2005
+│   │   │   │   ├── alexnetX-vs-michaelee.png
+│   │   │   │   └── alexnetY-vs-michaelee.png
+│   │   │   ├── original-image-set
+│   │   │   │   ├── alexnetX-vs-img-height.png
+│   │   │   │   ├── alexnetX-vs-img-width.png
+│   │   │   │   ├── alexnetX-vs-size-cm.png
+│   │   │   │   ├── alexnetY-vs-img-height.png
+│   │   │   │   ├── alexnetY-vs-img-width.png
+│   │   │   │   └── alexnetY-vs-size-cm.png
+│   │   │   └── texture
+│   │   │       └── alexnetY-vs-Texture.png
 │   │   ├── _stats
 │   │   │   ├── bw-combined-image-set
 │   │   │   │   ├── alexnetX-vs-img-height-stats.txt
@@ -767,17 +775,24 @@ The code for the following experiments is organized into various directories and
 │   │   │   │   ├── alexnetY-vs-size-cm-stats.txt
 │   │   │   │   ├── fruit_img_dims-lm-stats.txt
 │   │   │   │   └── fruit_sizes-lm-stats.txt
-│   │   │   └── original-image-set
-│   │   │       ├── alexnetX-vs-img-height-stats.txt
-│   │   │       ├── alexnetX-vs-img-width-stats.txt
-│   │   │       ├── alexnetX-vs-size-cm-stats.txt
-│   │   │       ├── alexnetY-vs-img-height-stats.txt
-│   │   │       ├── alexnetY-vs-img-width-stats.txt
-│   │   │       ├── alexnetY-vs-size-cm-stats.txt
-│   │   │       ├── fruit_img_dims-lm-stats.txt
-│   │   │       └── fruit_sizes-lm-stats.txt
+│   │   │   ├── lee-2005
+│   │   │   │   ├── alexnetX-vs-MichaelLeeX.txt
+│   │   │   │   └── alexnetY-vs-MichaelLeeY.txt
+│   │   │   ├── original-image-set
+│   │   │   │   ├── alexnetX-vs-img-height-stats.txt
+│   │   │   │   ├── alexnetX-vs-img-width-stats.txt
+│   │   │   │   ├── alexnetX-vs-size-cm-stats.txt
+│   │   │   │   ├── alexnetY-vs-img-height-stats.txt
+│   │   │   │   ├── alexnetY-vs-img-width-stats.txt
+│   │   │   │   ├── alexnetY-vs-size-cm-stats.txt
+│   │   │   │   ├── fruit_img_dims-lm-stats.txt
+│   │   │   │   └── fruit_sizes-lm-stats.txt
+│   │   │   └── texture
+│   │   │       └── alexnetY-vs-Texture.txt
 │   │   ├── alexnet-regression-combined.R
-│   │   └── alexnet-regression-original.R
+│   │   ├── alexnet-regression-original.R
+│   │   ├── mds-v-alexnet-reg.R
+│   │   └── texture-analyses.R
 │   ├── coreFruitNet.m
 │   ├── executeMultiplePlotFruits.m
 │   ├── executePlotFruits.m
@@ -787,7 +802,8 @@ The code for the following experiments is organized into various directories and
 │   ├── multiplePlotFruits.m
 │   ├── plotFruits.m
 │   ├── runFruitNet.m
-│   └── saveFruitFeatures.m
+│   ├── saveFruitFeatures.m
+│   └── textureAnalysis.m
 ├── README.md
 ├── mds_experiment
 │   ├── _output
@@ -809,5 +825,5 @@ The code for the following experiments is organized into various directories and
     ├── DeDeyne2008BRM.PDF
     └── TextDocSimilarity.pdf
 
-93 directories, 670 files
+97 directories, 682 files
 ```
