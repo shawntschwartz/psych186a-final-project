@@ -47,10 +47,26 @@ ggplot(alexnet_classifications, aes(michael_lee$MLMDSX, alexnet_classifications$
   geom_point() +
   geom_text(aes(label = alexnet_classifications$Fruit.Labels), hjust = 0.5, vjust = -0.5) +
   geom_smooth(method = "lm") +
-  labs(x = "Lee (2005)", y = "AlexNet Classification Reduced (X)")
+  labs(x = "Lee (2005) X", y = "AlexNet Classification Reduced (X)")
 
-ggsave("_plots/alexnetX-vs-michaelee.png")
+ggsave("_plots/alexnetX-vs-leeX.png")
 
+
+al_ml_reg_y <- lm(alexnet_classifications$AlexNetY ~ michael_lee$MLMDSY)
+al_ml_reg_y_summary <- capture.output(print(summary(al_ml_reg_y)))
+writeLines(al_ml_reg_y_summary, con = file("_stats/alexnetY-vs-MichaelLeeY.txt"))
+plot(michael_lee$MLMDSY, alexnet_classifications$AlexNetY)
+
+ggplot(alexnet_classifications, aes(michael_lee$MLMDSY, alexnet_classifications$AlexNetX)) +
+  geom_point() +
+  geom_text(aes(label = alexnet_classifications$Fruit.Labels), hjust = 0.5, vjust = -0.5) +
+  geom_smooth(method = "lm") +
+  labs(x = "Lee (2005) Y", y = "AlexNet Classification Reduced (Y)")
+
+ggsave("_plots/alexnetY-vs-leeY.png")
+
+
+# Correlation Matrices
 x_cor <- data.frame()
 x_cor <- cbind(alexnet_classifications$AlexNetX, michael_lee$MLMDSX)
 
