@@ -1,0 +1,19 @@
+
+Call:
+lm(formula = ml_lee_data_avg$ML.PC2 ~ ml_lee_data_avg$Lee.2005.X)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-661.71 -181.98  -16.02  186.50  519.70 
+
+Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                -4.062e-03  6.016e+01   0.000   0.9999  
+ml_lee_data_avg$Lee.2005.X -4.877e+02  2.144e+02  -2.275   0.0347 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 275.7 on 19 degrees of freedom
+Multiple R-squared:  0.2141,	Adjusted R-squared:  0.1727 
+F-statistic: 5.176 on 1 and 19 DF,  p-value: 0.03468
+
